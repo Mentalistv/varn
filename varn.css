@@ -140,3 +140,44 @@ a:active{
     color: seagreen;
     background-color: rgb(24, 68, 4);
 }
+
+.navbar{
+    background-color: black;
+    border-radius: 50px;
+}
+
+.navbar ul{
+    /* to fix bg color, float doesnt allow  */
+    overflow: auto;
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar li a:hover{
+    color: rgb(204, 202, 202);
+}
+
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 4px;
+    width: 200px;
+}
+
+.search{
+    float: right;
+    color:rgb(0, 255, 242);
+    padding: 12px 45px;
+}
