@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--d-->
+<!--dgf11-->
+<!-- dsfds -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="add description here">
+    <meta name="keywords" content="html, html tut, showsInSearchResult">
+    
+    <!-- robots is used if you dont want ur website to appear in search engines -->
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <style>
+        p{
+            color: blue !important;
+            /* !important provides higher precedence */
+            background-color: aqua;
+        }
+    </style>
+
+    <!-- to add css file -->
+    <link rel="stylesheet" href="varn.css">
+
+
+    <!-- to add javascript file -->
+    <script src="varn.js"></script>
+
+    <title>Varn</title>
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> About </a> </li>
+                <li> <a href="#"> Services </a> </li>
+                <li> <a href="#"> Contact </a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search..." >
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <br>
+    
+    <header class="headerInline">
+        <h1>hey there</h1>
+    </header>
+
+    <div>
+        <div class="box">
+            <h1>hey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, quos officiis ipsa itaque nulla facilis? Molestias odit vero corrupti tenetur officiis quo recusandae dolorem temporibus beatae ad. Ea sequi modi cumque tempore iure perferendis ipsa veniam tempora magnam, doloremque at.</p>
+        </div>
+        <div class="box">
+            <h1>hey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, quos officiis ipsa itaque nulla facilis? Molestias odit vero corrupti tenetur officiis quo recusandae dolorem temporibus beatae ad. Ea sequi modi cumque tempore iure perferendis ipsa veniam tempora magnam, doloremque at.</p>
+        </div>
+        <div class="box">
+            <h1>hey</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, quos officiis ipsa itaque nulla facilis? Molestias odit vero corrupti tenetur officiis quo recusandae dolorem temporibus beatae ad. Ea sequi modi cumque tempore iure perferendis ipsa veniam tempora magnam, doloremque at.</p>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="b" id="box1">1</div>
+        <div class="b" id="box2">2</div>
+        <div class="b" id="box3">3</div>
+        <div class="b" id="box4">4</div>
+    </div>
+
+    <!-- hello world -->
+    <h1>Varn</h1>
+    <button class="btn">aur?</button>
+    <p class="imgBG">I'm Varn.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem consequuntur ab maxime eos et
+        quaerat dolores distinctio quasi nesciunt, alias aut nam saepe perferendis ex sit pariatur explicabo assumenda
+        suscipit culpa. Ipsum molestiae ullam hic earum, velit at sit? <br> used Lorem40</p>
+
+    <div class="containerOut">
+        <p class="container" id="first"><strong>for bold</strong> <b>this works too</b> 1</p>
+        <p class="container" id="second"><em>for italics</em> <i>this works too</i> 2</p>
+        <p class="container" id="third">3 <br>for line break</p>
+    </div>
+        
+
+    <!-- for horizontal line -->
+    <hr>
+
+    <p>use p*4</p>
+
+    <!-- links and images -->
+    <h3>links</h3>
+    <a href="https://www.google.com">Google</a>
+    <br>
+    <a href="https://www.google.com" target="_blank">Google in new tab</a>
+    <br>
+    <!-- to link internal files -->
+    <h3>adding internal file</h3>
+    <a href="/VARN GUPTA.pdf" target="_blank">Resume</a>
+    <br>
+    <!-- to add image -->
+    <h3>images</h3>
+    <img src="/sign.jpg" alt="what text to show if it fails to show the image">
+    <br>
+    <img src="https://source.unsplash.com/720x480/?nature,water"
+        alt="use this link to generate random images, change size through link and change topicc at end" width="480"
+        height="360">
+
+    <!-- lists and table -->
+    <ul type="circle">
+        <!-- disc square and cirle for type of ul -->
+        <li>First</li>
+        <li>Second</li>
+        <ul type="disc">
+            <li>2.1</li>
+            <li>2.2</li>
+        </ul>
+        <li>Third</li>
+    </ul>
+
+    <ol type="I">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+
+
+    <h3>table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Varn</td>
+                <td>3</td>
+                <td>@</td>
+            </tr>
+
+            <tr>
+                <td>Vibhu</td>
+                <td>4</td>
+                <td>$#</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>forms</h3>
+    <form action="backend.cpp">
+        <div>
+            Name: <input type="text" name="name" value="search">
+        </div>
+
+        <label for="cntry"> Country </label>
+        <div>
+            <input type="text" name="country" id="cntry">
+        </div>
+
+        <div>
+            Role: <input type="text" name="role">
+        </div>
+
+        <div>
+            Email: <input type="email" name="emailID">
+        </div>
+
+        <div>
+            DOB: <input type="date" name="date">
+        </div>
+
+        <div>
+            Number: <input type="number" name="number">
+        </div>
+
+        <label for="eli"> Eligible? </label>
+        <div>
+            <input type="checkbox" name="check" id="eli" checked>
+            <!-- remove checked to uncheck box -->
+        </div>
+        
+        <div>
+            Gender: <br> Male <input type="radio" name="gender"> <br> Female <input type="radio" name="gender">
+        </div>
+
+        <div>
+            Write: <br> <textarea name="text" cols="30" rows="10"></textarea>
+        </div>
+
+        <label for="year">Year</label>
+        <select name="Year" id="year">
+            <option value="20">2020</option>
+            <option value="21" selected>2021</option>
+            <option value="22">2022</option>
+        </select>
+
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+
+    <h3>inline and block elements</h3>
+    <p style="border: 2px solid red;">Lorem ipsum dolor sit.</p>
+    <p style="border: 3px solid red;">Lorem ipsum dolor sit.</p>
+
+    <span style="border: 2px dashed blue;">Lorem ipsum dolor sit amet.</span>
+    <span style="border: 3px dashed blue;">Lorem ipsum dolor sit amet.</span>
+
+
+    <h3>ids and classes</h3>
+
+    <!-- id is unique but multiple classes can be added using space char as delimiter -->
+    <div id="mainBox" class="redBG blackBorder">hehe~~</div>
+
+    <h3>Emmet</h3>
+    <!-- write span.redBg n press enter -->
+    <span class="redBG blackBorder"> write <em> span.redBg </em> to add a class </span>
+    
+    <br>
+    
+    <span id="mainSpan">write <em> span#mainSpace </em> to add it an id</span>
+    
+    <br>
+    
+    <span class="one two three four">use multiple . or  # to add multiple class or single id with class</span>
+    
+    <br>
+    
+    <span id="sd" class="erw">write span#sd.erw</span>
+    
+    <br>
+
+    <span class="fesd fdsfdf df">wrote</span>
+    <span class="fesd fdsfdf df">span..fesd.fdsfdf.df*4</span>
+    <span class="fesd fdsfdf df">to get</span>
+    <span class="fesd fdsfdf df">4 of these.</span>
+    
+
+    <h3>HTML Entities</h3>
+
+    <div class="container">by deafulat html consider only one         space char</div>
+    <div class="container">but by using nbsp with an & in start, &nbsp;&nbsp; we can add multiple space</div>
+
+    <div>
+        <p> direct tag name with angular bracket cant be use so use &lt;p&gt; to write it.</p>
+        <p> Symbols which arent present in keyboard can also be wirtten like &pound;, &copy;.</p>
+        <a href="https://dev.w3.org/html5/html-author/charref">more are present here</a>
+    </div>
+
+    <h3>Semantics Elements</h3>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">Check info</a>
+
+    <article class="forecast">
+        <h1>Article</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article>
+    
+
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
+
+    <!-- need css too to show change -->
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+
+    <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
+
+
+    <details>
+        <summary>Details</summary>
+        Shows content written in summary.
+    </details>
+    
+    <figure>
+        <img src="https://source.unsplash.com/720x480/?elephant"
+             alt="Elephant at sunset" width="480" height="360">
+        <figcaption>An elephant</figcaption>
+    </figure>
+
+
+    <p>The Cure will be celebrating their 40th anniversary on <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+
+    <p>The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.</p>
+
+    <br><br>
+
+    <p>Some more semantic elements are: figure,
+        footer,
+        header,
+        main,
+        mark,
+        nav,
+        section,
+        summary,
+        time.</p>
+</body>
+
+</html>

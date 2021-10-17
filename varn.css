@@ -1,0 +1,233 @@
+/* '*' used to apply changes on all elements */
+*{
+    /* its used to prevent change in width cuz of change in margin/padding */
+    box-sizing: border-box;
+}
+
+p { 
+    /* by name */
+    color: grey(4, 129, 160);
+    /* by rgb */
+    color:rgb(0, 0, 0);
+    /* by hex value, search hex color picker on web to use color pallete to find hex values*/
+    color: #ffffff;
+
+    font-family: 'Times New Roman', Cambria, Cochin, Georgia, Times, serif;
+    /* https://fonts.google.com/ used this to import font styles */
+    background-color: rgb(0, 255, 242);
+
+    font-size: 18px; 
+    /* px is 1/96th of inch */
+
+    line-height: 1.5em;
+    /* 1.5 X font size */
+
+    font-weight: bold;
+    font-style: italic;
+
+    height: auto; /*can give value in px like 100px*/
+    width: auto; /*same for this*/
+
+    border-width: 2px;
+    border-color: black;
+    border-style: dashed;
+    border-radius: 10px;
+    /* can add top, left, right and bottom to change a specify edge or corner for both width and radius */
+
+    padding: 10px 20px 30px 40px; /* top right bottom left, can give single value for all */
+
+    /* for y(top/bottom) x(right/left) */
+    /* padding: 20px 10px;  */
+
+    /* similarly for margin: TBRL */
+    margin: 20px;
+    /* can add top, left, right and bottom to change a specify edge or corner for both margin and padding */
+}
+
+.redBG{
+    background-color: red;
+    color: black;
+}
+
+.blackBorder{
+    border: 2px solid black;
+    /* color: red; */
+}
+
+span, div{
+    color:darkolivegreen;
+}
+
+#mainSpan{
+    font-style: oblique;
+    border: 2px dashed grey;
+}
+
+.imgBG{
+    width: 920px;
+    height: 580px;
+    background-color: #fff;
+    /* border: 2px black solid; */
+
+    background-image: url(sign.jpg);
+    background-repeat: no-repeat; /* to stop the repetitions of same img */
+    background-position: center center; /* can use the values as coordinates, values like 12px top can also be given */
+    background-size: contain;
+}
+
+.containerOut{
+    color: rgb(7, 54, 2);
+    background-color: rgb(61, 156, 16);
+    border: 3px solid black;
+}
+
+.container{
+    color: rgb(8, 15, 117);
+    background-color: rgb(54, 122, 201);
+    border: 3px solid rgb(44, 6, 104);
+    text-align: center;
+}
+
+#first{
+    float: left;
+    width: 47%;
+}
+
+#second{
+    float: left;
+    width: 47%;
+}
+
+#third{
+    clear: both;
+    /* float: inline-end; */
+    width: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: turquoise;
+    background-color: teal;
+    border: 2px solid darkblue;
+}
+
+a:hover{
+    color: black;
+    background-color: white;
+}
+
+a:visited{
+    color: white;
+    background-color: rgb(129, 8, 8);;
+}
+
+a:active{
+    color: violet;
+    background-color: purple;
+}
+
+.btn{
+    color: chocolate;
+    background-color: rgb(112, 56, 16);
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.btn:hover{
+    color: seagreen;
+    background-color: rgb(24, 68, 4);
+}
+
+.navbar{
+    background-color: black;
+    border-radius: 50px;
+}
+
+.navbar ul{
+    /* to fix bg color, float doesnt allow  */
+    overflow: auto;
+}
+
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar li a:hover{
+    color: rgb(204, 202, 202);
+}
+
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 4px;
+    width: 200px;
+}
+
+.menu{
+    position: sticky;
+    top: 0px;    
+}
+
+.search{
+    float: right;
+    color:rgb(0, 255, 242);
+    padding: 12px 45px;
+}
+
+.headerInline{
+    display: block;
+    width: 10%;
+    border: 2px red solid;
+    margin: auto;
+}
+
+.box{
+    width: 33%;
+    display: inline-block;
+}
+
+.parent{
+    border: 2px black solid;
+    margin: 10px;
+}
+
+.b{
+    border: black 2px solid;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+#box3{
+    position: absolute; /* relative to the position of its first parent */
+    
+    position: relative; /* relative to earlier position*/
+    
+    top: 20px;
+    left: 20px;
+}
+
+#box2{
+    background-color: rgb(216, 213, 213);
+
+    position: fixed; /* fixed at a particular position */
+
+    /* for stick check .navbar */
+
+    right: 5px;
+    bottom: 5px;
+}
